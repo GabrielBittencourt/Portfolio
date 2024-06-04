@@ -1,0 +1,96 @@
+@font-face { 
+    font-family: Migra;
+    src: url('/src/fonts/Migra-Extrabold.otf'); 
+}
+
+body{
+    font-family: "Neue Montreal", sans-serif;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,86,87,1) 100%);
+}
+#header {
+    right: 28px;
+    left: 28px;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,86,87,1) 100%);
+    border-bottom: 2px solid rgb(240, 248, 255, .1);
+}
+
+.title a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Migra", sans-serif;
+    float: left;
+    position: absolute;
+    top: 30%;
+}
+
+.texto:hover{
+    color: gray;
+    border-bottom: 2px solid rgb(240, 248, 255, .1);
+    transition: ease .7s;
+}
+
+ul{
+    list-style: none;
+    float: right;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    padding: 0 10px;
+    margin: 0px 1em;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+ul a:hover {
+    color: gray;
+    border-bottom: 2px solid rgb(240, 248, 255, .1);
+    transition: ease .7s;
+}
+
+#main{
+    clear: both;
+    border: 5px solid aliceblue;
+    border-radius: 7px;
+    width: auto;
+    position: relative;
+    height: 1000px;
+    margin-bottom: 20px;
+    position: relative;
+    margin: 100px 28px;
+    background-color: gray;
+}
+
+.about{
+    color: aliceblue;
+    margin: auto;
+    text-align: center;
+}
+
+#footer{
+    color: aliceblue;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    left: 28px;
+    right: 28px;
+    padding-top: 10px;
+    text-align: center;
+    clear: both;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,86,87,1) 100%);
+}
+
+.linha{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    padding-top: 10px;
+    border-top: 2px solid rgb(240, 248, 255, .1);
+}
