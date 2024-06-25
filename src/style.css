@@ -77,11 +77,12 @@ ul a:hover {
     border: 5px solid var(--text-color);
     border-radius: 7px;
     width: auto;
+    height: 600px;
     position: relative;
-    height: 1000px;
     margin-bottom: 20px;
     margin: 100px 28px;
-    background-color: var(--main-bg);
+    background: no-repeat center url("./images/notebook.jpg");
+    background-size: cover;
 }
 
 .about {
@@ -120,5 +121,9 @@ ul a:hover {
     cursor: pointer;
     font-size: 15px;
     margin-top: 15px;
+}
+
+.dias{
+    color: black;
 }
 
