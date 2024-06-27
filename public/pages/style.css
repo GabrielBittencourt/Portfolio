@@ -1,0 +1,129 @@
+@font-face { 
+    font-family: Migra;
+    src: url('src/fonts/Migra-Extrabold.otf');
+}
+
+body {
+    font-family: "Neue Montreal", sans-serif;
+    background: var(--background-gradient);
+    color: var(--text-color);
+}
+
+:root {
+    --background-gradient: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,86,87,1) 100%);
+    --header-footer-bg: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,86,87,1) 100%);
+    --border-color: rgba(240, 248, 255, .1);
+    --text-color: aliceblue;
+    --main-bg: gray;
+}
+
+.light-theme {
+    --background-gradient: linear-gradient(90deg, aliceblue 0%, lightgray 100%);
+    --header-footer-bg: linear-gradient(90deg, aliceblue 0%, lightgray 100%);
+    --border-color: rgba(0, 0, 0, 1);
+    --text-color: black;
+    --main-bg: aliceblue;
+}
+
+#header {
+    right: 0px;
+    left: 0px;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: var(--header-footer-bg);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.title a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Migra", sans-serif;
+    float: left;
+    margin: 15px 0 0 30px;
+}
+
+.title a:hover {
+    color: gray;
+    border-bottom: 2px solid var(--border-color);
+    transition: ease .7s;
+}
+
+ul {
+    list-style: none;
+    float: right;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    padding: 0 10px;
+    margin: 0px 1em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul a:hover {
+    color: gray;
+    border-bottom: 2px solid var(--border-color);
+    transition: ease .7s;
+}
+
+#main {
+    clear: both;
+    border: 5px solid var(--text-color);
+    border-radius: 7px;
+    width: auto;
+    height: 600px;
+    position: relative;
+    margin-bottom: 20px;
+    margin: 100px 28px;
+    background: no-repeat center url("./images/notebook.jpg");
+    background-size: cover;
+}
+
+.about {
+    color: var(--text-color);
+    margin: auto;
+    text-align: center;
+}
+
+#footer {
+    color: var(--text-color);
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    left: 28px;
+    right: 28px;
+    padding-top: 10px;
+    text-align: center;
+    clear: both;
+    background: var(--header-footer-bg);
+}
+
+.linha {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    padding-top: 10px;
+    border-top: 2px solid var(--border-color);
+}
+
+.theme-button {
+    float: right;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.dias{
+    color: black;
+}
+
